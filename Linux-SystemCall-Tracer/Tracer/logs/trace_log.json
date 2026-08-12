@@ -1,0 +1,3973 @@
+{
+  "trace_info": {
+    "tracer": "Linux System Call Tracer",
+    "started_at": "2026-08-11T14:08:59Z",
+    "root_pid": 1102
+  },
+  "events": [
+    {
+      "type": "process_start",
+      "pid": 1102,
+      "executable": "/mnt/c/Users/user/Desktop/Linux-SystemCall-Tracer/Tracer/Testing/fork"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1102,
+      "syscall": "restart_syscall",
+      "syscall_number": 219,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x0",
+        "rdx": "0x7ffcf3d61090",
+        "r10": "0x7ffcf3d61090",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1102,
+      "syscall": "restart_syscall",
+      "syscall_number": 219,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1102,
+      "syscall": "clone",
+      "syscall_number": 56,
+      "arguments": {
+        "rdi": "0x1200011",
+        "rsi": "0x0",
+        "rdx": "0x0",
+        "r10": "0x7f464508fa10",
+        "r8": "0x0",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "process_event",
+      "event": "fork",
+      "parent_pid": 1102,
+      "child_pid": 1103
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1103,
+      "syscall": "set_robust_list",
+      "syscall_number": 273,
+      "arguments": {
+        "rdi": "0x7f464508fa20",
+        "rsi": "0x18",
+        "rdx": "0x0",
+        "r10": "0x7f464508fa10",
+        "r8": "0x0",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1102,
+      "syscall": "clone",
+      "syscall_number": 56,
+      "return_value": 1103,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1103,
+      "syscall": "set_robust_list",
+      "syscall_number": 273,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1102,
+      "syscall": "clone",
+      "syscall_number": 56,
+      "arguments": {
+        "rdi": "0x1200011",
+        "rsi": "0x0",
+        "rdx": "0x0",
+        "r10": "0x7f464508fa10",
+        "r8": "0x0",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1103,
+      "syscall": "getpid",
+      "syscall_number": 39,
+      "arguments": {
+        "rdi": "0x1",
+        "rsi": "0x0",
+        "rdx": "0x0",
+        "r10": "0x7f46450d30b8",
+        "r8": "0x1",
+        "r9": "0x7f464508f740"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1103,
+      "syscall": "getpid",
+      "syscall_number": 39,
+      "return_value": 1103,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "process_event",
+      "event": "fork",
+      "parent_pid": 1102,
+      "child_pid": 1104
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1104,
+      "syscall": "set_robust_list",
+      "syscall_number": 273,
+      "arguments": {
+        "rdi": "0x7f464508fa20",
+        "rsi": "0x18",
+        "rdx": "0x0",
+        "r10": "0x7f464508fa10",
+        "r8": "0x0",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1104,
+      "syscall": "set_robust_list",
+      "syscall_number": 273,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1103,
+      "syscall": "write",
+      "syscall_number": 1,
+      "arguments": {
+        "rdi": "0x1",
+        "rsi": "0x58e1ffc7c2a0",
+        "rdx": "0x14",
+        "r10": "0x0",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1104,
+      "syscall": "getpid",
+      "syscall_number": 39,
+      "arguments": {
+        "rdi": "0x1",
+        "rsi": "0x0",
+        "rdx": "0x0",
+        "r10": "0x7f46450d30b8",
+        "r8": "0x1",
+        "r9": "0x7f464508f740"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1103,
+      "syscall": "write",
+      "syscall_number": 1,
+      "return_value": 20,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1104,
+      "syscall": "getpid",
+      "syscall_number": 39,
+      "return_value": 1104,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1103,
+      "syscall": "mkdir",
+      "syscall_number": 83,
+      "path": "child1_dir",
+      "arguments": {
+        "rdi": "0x58e1fa9c509a",
+        "rsi": "0x1ed",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1104,
+      "syscall": "write",
+      "syscall_number": 1,
+      "arguments": {
+        "rdi": "0x1",
+        "rsi": "0x58e1ffc7c2a0",
+        "rdx": "0x14",
+        "r10": "0x0",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1102,
+      "syscall": "clone",
+      "syscall_number": 56,
+      "return_value": 1104,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1104,
+      "syscall": "write",
+      "syscall_number": 1,
+      "return_value": 20,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1103,
+      "syscall": "mkdir",
+      "syscall_number": 83,
+      "return_value": -17,
+      "status": "FAILED"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1104,
+      "syscall": "mkdir",
+      "syscall_number": 83,
+      "path": "child2_dir",
+      "arguments": {
+        "rdi": "0x58e1fa9c513f",
+        "rsi": "0x1ed",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1103,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "child1.txt",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x58e1fa9c50b9",
+        "rdx": "0x241",
+        "r10": "0x1a4",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1102,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "parent.txt",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x58e1fa9c517c",
+        "rdx": "0x241",
+        "r10": "0x1a4",
+        "r8": "0x2",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1104,
+      "syscall": "mkdir",
+      "syscall_number": 83,
+      "return_value": -17,
+      "status": "FAILED"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1104,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "child2.txt",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x58e1fa9c515e",
+        "rdx": "0x241",
+        "r10": "0x1a4",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1103,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1103,
+      "syscall": "write",
+      "syscall_number": 1,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x58e1fa9c50a5",
+        "rdx": "0x13",
+        "r10": "0x1a4",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1103,
+      "syscall": "write",
+      "syscall_number": 1,
+      "return_value": 19,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1103,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x58e1fa9c50a5",
+        "rdx": "0x13",
+        "r10": "0x1a4",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1102,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1102,
+      "syscall": "write",
+      "syscall_number": 1,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x58e1fa9c5169",
+        "rdx": "0x12",
+        "r10": "0x1a4",
+        "r8": "0x2",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1104,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1103,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1104,
+      "syscall": "write",
+      "syscall_number": 1,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x58e1fa9c514a",
+        "rdx": "0x13",
+        "r10": "0x1a4",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1103,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "child1.txt",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x58e1fa9c50b9",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1104,
+      "syscall": "write",
+      "syscall_number": 1,
+      "return_value": 19,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1102,
+      "syscall": "write",
+      "syscall_number": 1,
+      "return_value": 18,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1104,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x58e1fa9c514a",
+        "rdx": "0x13",
+        "r10": "0x1a4",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1102,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x58e1fa9c5169",
+        "rdx": "0x12",
+        "r10": "0x1a4",
+        "r8": "0x2",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1103,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1104,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1103,
+      "syscall": "read",
+      "syscall_number": 0,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffcf3d61030",
+        "rdx": "0x80",
+        "r10": "0x0",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1104,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "child2.txt",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x58e1fa9c515e",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1103,
+      "syscall": "read",
+      "syscall_number": 0,
+      "return_value": 19,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1102,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1103,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffcf3d61030",
+        "rdx": "0x80",
+        "r10": "0x0",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1102,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "parent.txt",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x58e1fa9c517c",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x2",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1103,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1104,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1103,
+      "syscall": "clock_nanosleep",
+      "syscall_number": 230,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x0",
+        "rdx": "0x7ffcf3d61090",
+        "r10": "0x7ffcf3d61090",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1104,
+      "syscall": "read",
+      "syscall_number": 0,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffcf3d61030",
+        "rdx": "0x80",
+        "r10": "0x0",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1102,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1102,
+      "syscall": "read",
+      "syscall_number": 0,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffcf3d61030",
+        "rdx": "0x80",
+        "r10": "0x0",
+        "r8": "0x2",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1104,
+      "syscall": "read",
+      "syscall_number": 0,
+      "return_value": 19,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1104,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffcf3d61030",
+        "rdx": "0x80",
+        "r10": "0x0",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1102,
+      "syscall": "read",
+      "syscall_number": 0,
+      "return_value": 18,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1102,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffcf3d61030",
+        "rdx": "0x80",
+        "r10": "0x0",
+        "r8": "0x2",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1104,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1104,
+      "syscall": "clock_nanosleep",
+      "syscall_number": 230,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x0",
+        "rdx": "0x7ffcf3d61090",
+        "r10": "0x7ffcf3d61090",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1102,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1102,
+      "syscall": "wait4",
+      "syscall_number": 61,
+      "arguments": {
+        "rdi": "0xffffffff",
+        "rsi": "0x0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x2",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1103,
+      "syscall": "clock_nanosleep",
+      "syscall_number": 230,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1103,
+      "syscall": "clone",
+      "syscall_number": 56,
+      "arguments": {
+        "rdi": "0x1200011",
+        "rsi": "0x0",
+        "rdx": "0x0",
+        "r10": "0x7f464508fa10",
+        "r8": "0x0",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "process_event",
+      "event": "fork",
+      "parent_pid": 1103,
+      "child_pid": 1105
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1103,
+      "syscall": "clone",
+      "syscall_number": 56,
+      "return_value": 1105,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "set_robust_list",
+      "syscall_number": 273,
+      "arguments": {
+        "rdi": "0x7f464508fa20",
+        "rsi": "0x18",
+        "rdx": "0x0",
+        "r10": "0x7f464508fa10",
+        "r8": "0x0",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1103,
+      "syscall": "wait4",
+      "syscall_number": 61,
+      "arguments": {
+        "rdi": "0xffffffff",
+        "rsi": "0x0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x2",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "set_robust_list",
+      "syscall_number": 273,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "getpid",
+      "syscall_number": 39,
+      "arguments": {
+        "rdi": "0x1",
+        "rsi": "0x0",
+        "rdx": "0x0",
+        "r10": "0x7f46450d30b8",
+        "r8": "0x1",
+        "r9": "0x7f464508f740"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "getpid",
+      "syscall_number": 39,
+      "return_value": 1105,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "write",
+      "syscall_number": 1,
+      "arguments": {
+        "rdi": "0x1",
+        "rsi": "0x58e1ffc7c2a0",
+        "rdx": "0x17",
+        "r10": "0x0",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "write",
+      "syscall_number": 1,
+      "return_value": 23,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "grandchild.txt",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x58e1fa9c50f1",
+        "rdx": "0x241",
+        "r10": "0x1a4",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "write",
+      "syscall_number": 1,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x58e1fa9c50da",
+        "rdx": "0x16",
+        "r10": "0x1a4",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "write",
+      "syscall_number": 1,
+      "return_value": 22,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x58e1fa9c50da",
+        "rdx": "0x16",
+        "r10": "0x1a4",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "grandchild.txt",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x58e1fa9c50f1",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "read",
+      "syscall_number": 0,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffcf3d61030",
+        "rdx": "0x80",
+        "r10": "0x0",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "read",
+      "syscall_number": 0,
+      "return_value": 22,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffcf3d61030",
+        "rdx": "0x80",
+        "r10": "0x0",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "execve",
+      "syscall_number": 59,
+      "path": "/bin/echo",
+      "arguments": {
+        "rdi": "0x58e1fa9c5122",
+        "rsi": "0x7ffcf3d61050",
+        "rdx": "0x7ffcf3d61218",
+        "r10": "0x58e1fa9c511d",
+        "r8": "0x7ffcf3d61050",
+        "r9": "0x3"
+      }
+    },
+    {
+      "type": "process_event",
+      "event": "exec",
+      "parent_pid": 1105
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "execve",
+      "syscall_number": 59,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "brk",
+      "syscall_number": 12,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x7dc70582da18",
+        "rdx": "0x0",
+        "r10": "0x37f",
+        "r8": "0x0",
+        "r9": "0x7dc70582d440"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "brk",
+      "syscall_number": 12,
+      "return_value": 106262394023936,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x2000",
+        "rdx": "0x3",
+        "r10": "0x22",
+        "r8": "0xffffffff",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293744193536,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "access",
+      "syscall_number": 21,
+      "arguments": {
+        "rdi": "0x7dc7058265b0",
+        "rsi": "0x4",
+        "rdx": "0x60a51a629d10",
+        "r10": "0x22",
+        "r8": "0x7dc7057f7000",
+        "r9": "0x7dc70582d440"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "access",
+      "syscall_number": 21,
+      "return_value": -2,
+      "status": "FAILED"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/etc/ld.so.cache",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x7dc70582538f",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0xffff",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc86010560",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0xffff",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x522b",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293744168960,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x522b",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/lib/x86_64-linux-gnu/libc.so.6",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x7dc7057f5140",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x7ffc86010777",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "read",
+      "syscall_number": 0,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc86010798",
+        "rdx": "0x340",
+        "r10": "0x0",
+        "r8": "0x7ffc86010777",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "read",
+      "syscall_number": 0,
+      "return_value": 832,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "pread64",
+      "syscall_number": 17,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc860103b0",
+        "rdx": "0x310",
+        "r10": "0x40",
+        "r8": "0x7ffc86010777",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "pread64",
+      "syscall_number": 17,
+      "return_value": 784,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc86010630",
+        "rdx": "0x3",
+        "r10": "0x40",
+        "r8": "0x7dc7057f5140",
+        "r9": "0x7dc7058302e0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "pread64",
+      "syscall_number": 17,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc86010280",
+        "rdx": "0x310",
+        "r10": "0x40",
+        "r8": "0xc0ff",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "pread64",
+      "syscall_number": 17,
+      "return_value": 784,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x211d90",
+        "rdx": "0x1",
+        "r10": "0x802",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293740044288,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x7dc705428000",
+        "rsi": "0x188000",
+        "rdx": "0x5",
+        "r10": "0x812",
+        "r8": "0x3",
+        "r9": "0x28000"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293740208128,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x7dc7055b0000",
+        "rsi": "0x4f000",
+        "rdx": "0x1",
+        "r10": "0x812",
+        "r8": "0x3",
+        "r9": "0x1b0000"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293741813760,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x7dc7055ff000",
+        "rsi": "0x6000",
+        "rdx": "0x3",
+        "r10": "0x812",
+        "r8": "0x3",
+        "r9": "0x1fe000"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293742137344,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x7dc705605000",
+        "rsi": "0xcd90",
+        "rdx": "0x3",
+        "r10": "0x32",
+        "r8": "0xffffffff",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293742161920,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7dc7057f5160",
+        "rdx": "0x1",
+        "r10": "0xc0000002",
+        "r8": "0x7dc705400378",
+        "r9": "0x4"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x3000",
+        "rdx": "0x3",
+        "r10": "0x22",
+        "r8": "0xffffffff",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293744156672,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "arch_prctl",
+      "syscall_number": 158,
+      "arguments": {
+        "rdi": "0x1002",
+        "rsi": "0x7dc7057ec740",
+        "rdx": "0xffff8238fa812f30",
+        "r10": "0x22",
+        "r8": "0xffffffff",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "arch_prctl",
+      "syscall_number": 158,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "set_tid_address",
+      "syscall_number": 218,
+      "arguments": {
+        "rdi": "0x7dc7057eca10",
+        "rsi": "0x7dc7057ec740",
+        "rdx": "0x7dc7058300c8",
+        "r10": "0x22",
+        "r8": "0xffffffff",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "set_tid_address",
+      "syscall_number": 218,
+      "return_value": 1105,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "set_robust_list",
+      "syscall_number": 273,
+      "arguments": {
+        "rdi": "0x7dc7057eca20",
+        "rsi": "0x18",
+        "rdx": "0x7dc7058300c8",
+        "r10": "0x22",
+        "r8": "0xffffffff",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "set_robust_list",
+      "syscall_number": 273,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "rseq",
+      "syscall_number": 334,
+      "arguments": {
+        "rdi": "0x7dc7057ed060",
+        "rsi": "0x20",
+        "rdx": "0x0",
+        "r10": "0x53053053",
+        "r8": "0x0",
+        "r9": "0x7dc70582d440"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "rseq",
+      "syscall_number": 334,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mprotect",
+      "syscall_number": 10,
+      "arguments": {
+        "rdi": "0x7dc7055ff000",
+        "rsi": "0x4000",
+        "rdx": "0x1",
+        "r10": "0x7dc7057f5160",
+        "r8": "0x7dc7057f5160",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mprotect",
+      "syscall_number": 10,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mprotect",
+      "syscall_number": 10,
+      "arguments": {
+        "rdi": "0x60a51a629000",
+        "rsi": "0x1000",
+        "rdx": "0x1",
+        "r10": "0x7dc7058302e0",
+        "r8": "0x7dc7058302e0",
+        "r9": "0x7dc70543b9c0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mprotect",
+      "syscall_number": 10,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mprotect",
+      "syscall_number": 10,
+      "arguments": {
+        "rdi": "0x7dc70582d000",
+        "rsi": "0x2000",
+        "rdx": "0x1",
+        "r10": "0x7dc70582fab0",
+        "r8": "0x7dc70582fab0",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mprotect",
+      "syscall_number": 10,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "prlimit64",
+      "syscall_number": 302,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x3",
+        "rdx": "0x0",
+        "r10": "0x7ffc86011180",
+        "r8": "0x0",
+        "r9": "0xd"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "prlimit64",
+      "syscall_number": 302,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "munmap",
+      "syscall_number": 11,
+      "arguments": {
+        "rdi": "0x7dc7057ef000",
+        "rsi": "0x522b",
+        "rdx": "0x0",
+        "r10": "0x7ffc86011180",
+        "r8": "0x0",
+        "r9": "0x7dc70582d440"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "munmap",
+      "syscall_number": 11,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "getrandom",
+      "syscall_number": 318,
+      "arguments": {
+        "rdi": "0x7dc70560a178",
+        "rsi": "0x8",
+        "rdx": "0x1",
+        "r10": "0x7ffc86011180",
+        "r8": "0x0",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "getrandom",
+      "syscall_number": 318,
+      "return_value": 8,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "brk",
+      "syscall_number": 12,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x7dc705603b20",
+        "rdx": "0x7dc705603b20",
+        "r10": "0x1",
+        "r8": "0x21000",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "brk",
+      "syscall_number": 12,
+      "return_value": 106262394023936,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "brk",
+      "syscall_number": 12,
+      "arguments": {
+        "rdi": "0x60a52441c000",
+        "rsi": "0x7dc705603b20",
+        "rdx": "0x7dc70560ad70",
+        "r10": "0x1",
+        "r8": "0x21000",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "brk",
+      "syscall_number": 12,
+      "return_value": 106262394159104,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/locale-archive",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x7dc7055d48b0",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": -2,
+      "status": "FAILED"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/share/locale/locale.alias",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x7ffc86010ef0",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x8",
+        "r9": "0x1"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc86010d00",
+        "rdx": "0x7dc705601ee0",
+        "r10": "0x0",
+        "r8": "0x1",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "read",
+      "syscall_number": 0,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x60a5243fb4a0",
+        "rdx": "0x1000",
+        "r10": "0x1",
+        "r8": "0x7dc705603b20",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "read",
+      "syscall_number": 0,
+      "return_value": 2996,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "read",
+      "syscall_number": 0,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x60a5243fb4a0",
+        "rdx": "0x1000",
+        "r10": "0x800",
+        "r8": "0x1",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "read",
+      "syscall_number": 0,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x1",
+        "rdx": "0x7dc705601ee0",
+        "r10": "0x800",
+        "r8": "0x8000",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fb550",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": -2,
+      "status": "FAILED"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.utf8/LC_IDENTIFICATION",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fb650",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc860110b0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x102",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293744189440,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x102",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x7dc7055d0090",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x7dc7055b28c0",
+        "r9": "0xfff7ffffffffbff8"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc86010ec0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x7dc7055b28c0",
+        "r9": "0xfff7ffffffffbff8"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x6994",
+        "rdx": "0x1",
+        "r10": "0x1",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293744128000,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x6994",
+        "rdx": "0x1",
+        "r10": "0x1",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "futex",
+      "syscall_number": 202,
+      "arguments": {
+        "rdi": "0x7dc70560472c",
+        "rsi": "0x81",
+        "rdx": "0x7fffffff",
+        "r10": "0x0",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "futex",
+      "syscall_number": 202,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.UTF-8/LC_MEASUREMENT",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fb6e0",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": -2,
+      "status": "FAILED"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.utf8/LC_MEASUREMENT",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fb980",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc860110b0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x17",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293744185344,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x17",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.UTF-8/LC_TELEPHONE",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fba00",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": -2,
+      "status": "FAILED"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.utf8/LC_TELEPHONE",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fbc30",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc860110b0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x2f",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293744181248,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x2f",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.UTF-8/LC_ADDRESS",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fbe00",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": -2,
+      "status": "FAILED"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.utf8/LC_ADDRESS",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fbef0",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc860110b0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x7f",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293744177152,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7f",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.UTF-8/LC_NAME",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fc100",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": -2,
+      "status": "FAILED"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.utf8/LC_NAME",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fc1f0",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc860110b0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x3e",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293744173056,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x3e",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.UTF-8/LC_PAPER",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fc3d0",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": -2,
+      "status": "FAILED"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.utf8/LC_PAPER",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fc480",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc860110b0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x22",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293744168960,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x22",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.UTF-8/LC_MESSAGES",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fd3a0",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": -2,
+      "status": "FAILED"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.utf8/LC_MESSAGES",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fd730",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc860110b0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc860110b0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x7ffc86011060",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x7ffc86011060",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc860110b0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x7ffc86011060",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x30",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293744123904,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x30",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.UTF-8/LC_MONETARY",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fd7b0",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": -2,
+      "status": "FAILED"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.utf8/LC_MONETARY",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fdb00",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc860110b0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x10e",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293744119808,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x10e",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.UTF-8/LC_COLLATE",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fde10",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": -2,
+      "status": "FAILED"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.utf8/LC_COLLATE",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fdf00",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc860110b0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x57e",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293744115712,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x57e",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.UTF-8/LC_TIME",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fe140",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": -2,
+      "status": "FAILED"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.utf8/LC_TIME",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fe230",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc860110b0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0xd20",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293744111616,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0xd20",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.UTF-8/LC_NUMERIC",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fe8d0",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": -2,
+      "status": "FAILED"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.utf8/LC_NUMERIC",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fe9c0",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc860110b0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x32",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293744107520,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x32",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.UTF-8/LC_CTYPE",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243feb90",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": -2,
+      "status": "FAILED"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "path": "/usr/lib/locale/C.utf8/LC_CTYPE",
+      "arguments": {
+        "rdi": "0xffffff9c",
+        "rsi": "0x60a5243fec80",
+        "rdx": "0x80000",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "openat",
+      "syscall_number": 257,
+      "return_value": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x7ffc860110b0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x60a5243fb010",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0x5800c",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "mmap",
+      "syscall_number": 9,
+      "return_value": 138293743742976,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x3",
+        "rsi": "0x5800c",
+        "rdx": "0x1",
+        "r10": "0x2",
+        "r8": "0x3",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "arguments": {
+        "rdi": "0x1",
+        "rsi": "0x7ffc860111e0",
+        "rdx": "0x7dc705601ee0",
+        "r10": "0x0",
+        "r8": "0x7ffc86013057",
+        "r9": "0x20100000001"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "fstat",
+      "syscall_number": 5,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "write",
+      "syscall_number": 1,
+      "arguments": {
+        "rdi": "0x1",
+        "rsi": "0x60a5243ff0b0",
+        "rdx": "0x1d",
+        "r10": "0x1",
+        "r8": "0x7dc705603b20",
+        "r9": "0x410"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "write",
+      "syscall_number": 1,
+      "return_value": 29,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x1",
+        "rsi": "0x60a5243ff0b0",
+        "rdx": "0x7dc705601ee0",
+        "r10": "0x1",
+        "r8": "0x0",
+        "r9": "0x410"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "arguments": {
+        "rdi": "0x2",
+        "rsi": "0x1",
+        "rdx": "0x7dc705601ee0",
+        "r10": "0x60a5243ff0b0",
+        "r8": "0x0",
+        "r9": "0x7"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1105,
+      "syscall": "close",
+      "syscall_number": 3,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1105,
+      "syscall": "exit_group",
+      "syscall_number": 231,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0xffffffffffffff88",
+        "rdx": "0xe7",
+        "r10": "0x7ffc8601132f",
+        "r8": "0x7ffc860113a0",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "process_event",
+      "event": "exit",
+      "parent_pid": 1105
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1103,
+      "syscall": "wait4",
+      "syscall_number": 61,
+      "return_value": 1105,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "process_event",
+      "event": "signal_received",
+      "pid": 1103,
+      "signal": "UNKNOWN_SIGNAL",
+      "signal_number": 17
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1103,
+      "syscall": "unlink",
+      "syscall_number": 87,
+      "path": "child1.txt",
+      "arguments": {
+        "rdi": "0x58e1fa9c50b9",
+        "rsi": "0x0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x2",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1103,
+      "syscall": "unlink",
+      "syscall_number": 87,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1103,
+      "syscall": "exit_group",
+      "syscall_number": 231,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0xffffffffffffff88",
+        "rdx": "0xe7",
+        "r10": "0x7ffcf3d60f8f",
+        "r8": "0x7ffcf3d61000",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "process_event",
+      "event": "exit",
+      "parent_pid": 1103
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1102,
+      "syscall": "wait4",
+      "syscall_number": 61,
+      "return_value": 1103,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "process_event",
+      "event": "signal_received",
+      "pid": 1102,
+      "signal": "UNKNOWN_SIGNAL",
+      "signal_number": 17
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1102,
+      "syscall": "wait4",
+      "syscall_number": 61,
+      "arguments": {
+        "rdi": "0xffffffff",
+        "rsi": "0x0",
+        "rdx": "0x0",
+        "r10": "0x0",
+        "r8": "0x2",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1104,
+      "syscall": "clock_nanosleep",
+      "syscall_number": 230,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1104,
+      "syscall": "unlink",
+      "syscall_number": 87,
+      "path": "child2.txt",
+      "arguments": {
+        "rdi": "0x58e1fa9c515e",
+        "rsi": "0x0",
+        "rdx": "0x0",
+        "r10": "0x7ffcf3d61090",
+        "r8": "0x64",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1104,
+      "syscall": "unlink",
+      "syscall_number": 87,
+      "return_value": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1104,
+      "syscall": "exit_group",
+      "syscall_number": 231,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0xffffffffffffff88",
+        "rdx": "0xe7",
+        "r10": "0x7ffcf3d60f8f",
+        "r8": "0x7ffcf3d61000",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "process_event",
+      "event": "exit",
+      "parent_pid": 1104
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1102,
+      "syscall": "wait4",
+      "syscall_number": 61,
+      "return_value": 1104,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "process_event",
+      "event": "signal_received",
+      "pid": 1102,
+      "signal": "UNKNOWN_SIGNAL",
+      "signal_number": 17
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1102,
+      "syscall": "write",
+      "syscall_number": 1,
+      "arguments": {
+        "rdi": "0x1",
+        "rsi": "0x58e1ffc7c2a0",
+        "rdx": "0x1",
+        "r10": "0x0",
+        "r8": "0x2",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1102,
+      "syscall": "write",
+      "syscall_number": 1,
+      "return_value": 1,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1102,
+      "syscall": "write",
+      "syscall_number": 1,
+      "arguments": {
+        "rdi": "0x1",
+        "rsi": "0x58e1ffc7c2a0",
+        "rdx": "0x10",
+        "r10": "0x0",
+        "r8": "0x2",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "syscall",
+      "phase": "exit",
+      "pid": 1102,
+      "syscall": "write",
+      "syscall_number": 1,
+      "return_value": 16,
+      "status": "SUCCESS"
+    },
+    {
+      "type": "syscall",
+      "phase": "entry",
+      "pid": 1102,
+      "syscall": "exit_group",
+      "syscall_number": 231,
+      "arguments": {
+        "rdi": "0x0",
+        "rsi": "0xffffffffffffff88",
+        "rdx": "0xe7",
+        "r10": "0x7ffcf3d60faf",
+        "r8": "0x7ffcf3d61020",
+        "r9": "0x0"
+      }
+    },
+    {
+      "type": "process_event",
+      "event": "exit",
+      "parent_pid": 1102
+    }
+  ]
+}
